@@ -1,0 +1,19 @@
+FROM python:3.8-slim-buster
+
+WORKDIR /app
+
+COPY requirements.txt requirements.txt
+RUN pip install -r requirements.txt
+
+COPY app/main.py main.py
+COPY app/twitter_stream.py twitter_stream.py
+COPY app/gpt3_sentiment_analysis.py gpt3_sentiment_analysis.py
+COPY app/stock_list.py stock_list.py
+COPY app/redis_db.py redis_db.py
+COPY app/backtesting.py backtesting.py
+COPY app/config.py config.py
+COPY app/utils.py utils.py
+COPY data/stock_aliases.csv data/stock_aliases.csv
+COPY data/one_year_data.csv data/one_year_data.csv
+
+CMD ["python", "main.py"]

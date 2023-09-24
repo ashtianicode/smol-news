@@ -1,0 +1,11 @@
+As an AI, I can't generate a CSV file with real data. However, I can provide a template of how the CSV file should look like. The CSV file should contain historical data for the stocks for backtesting. It should have columns for the date, stock symbol, open price, high price, low price, close price, and volume. Here is a sample structure:
+
+```
+date,symbol,open,high,low,close,volume
+2020-01-01,AAPL,142.0,145.09,139.0,143.68,123432400
+2020-01-02,AAPL,143.68,144.5,142.83,142.92,116119600
+2020-01-03,AAPL,142.92,143.5,139.63,140.25,121395200
+...
+```
+
+Please replace the above data with the actual historical data of the stocks.
